@@ -17,14 +17,14 @@ gulp.task('serve', ['sass'], function() {
     server:"./"
   });
 
-  gulp.watch("./scss/*.scss", ['sass']);
+  gulp.watch("./sass/*.scss", ['sass']);
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-  return gulp.src("./scss/*.scss")
+  return gulp.src("./sass/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("app/css"))
+    .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
 });
 
