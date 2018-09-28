@@ -1,6 +1,7 @@
 html, body {
     box-sizing: border-box;
     font-family: Montserrat, Verdana, Tahoma, Sans-Serif;
+    font-size: 100%;
     font-weight: normal;
 }
   
@@ -22,42 +23,50 @@ body {
 }
 
 .form-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(16, 127, 231);
 }
 
 .introduction {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: rgb(57, 62, 66);
 }
 
 .form-fields {
-    margin: 6px;
+    margin: 0.375rem;
     display: flex;
     flex-direction: column;
 }
 
 .input-name {
-    font-size: 14px;
-    margin: 0 0 4px 10px;
+    font-size: 0.875rem;
+    margin: 0 0 .250rem 0.625rem;
 }
 
 input {
-    border: solid 2px dodgerblue;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 6px;
+    border: solid 0.125rem dodgerblue;
+    border-radius: 0.315rem;
+    font-size: 1rem;
+    padding: 0.375rem;
 }
 
 .button {
-    font-size: 14px;
+    font-size: 0.875rem;
     background: linear-gradient(rgb(147, 180, 240), rgb(41, 102, 143));
     border: 0;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 16px;
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: 50%;
+}
+
+.second-section {
+    width: 50%;
+}
+
+.form-img {
+    width: auto;
 }
