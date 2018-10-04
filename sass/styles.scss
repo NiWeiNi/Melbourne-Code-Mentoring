@@ -10,6 +10,11 @@ box-sizing: inherit;
 }
 
 body {
+
+}
+
+.form-container {
+    background-color: rgb(14, 129, 182);
     display: flex;
 }
 
@@ -18,8 +23,13 @@ body {
     flex-direction: column;
 }
 
+.first-section {
+    background: white;
+}
+
 .second-section {
     background: rgb(12, 117, 216);
+    width: 20%;
 }
 
 .form-title {
@@ -63,10 +73,16 @@ input {
     width: 50%;
 }
 
-.second-section {
-    width: 50%;
-}
-
 .form-img {
     width: auto;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 420px) {
+    .form-container {
+        background-color: rgb(14, 129, 182);
+        display: inline;
+    }
 }

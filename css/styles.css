@@ -7,15 +7,20 @@ html, body {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-body {
+.form-container {
+  background-color: #0e81b6;
   display: flex; }
 
 .form {
   display: flex;
   flex-direction: column; }
 
+.first-section {
+  background: white; }
+
 .second-section {
-  background: #0c75d8; }
+  background: #0c75d8;
+  width: 20%; }
 
 .form-title {
   font-size: 1.25rem;
@@ -52,8 +57,11 @@ input {
   margin-top: 0.625rem;
   width: 50%; }
 
-.second-section {
-  width: 50%; }
-
 .form-img {
   width: auto; }
+
+/* Media queries */
+@media screen and (max-width: 420px) {
+  .form-container {
+    background-color: #0e81b6;
+    display: inline; } }
