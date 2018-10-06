@@ -9,10 +9,6 @@ html, body {
 box-sizing: inherit; 
 }
 
-body {
-
-}
-
 .wrapper {
     max-width: 800px;
     margin: auto;
@@ -27,7 +23,7 @@ body {
 
 .first-section {
     background: white;
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .second-section {
@@ -38,7 +34,6 @@ body {
 .form-title {
     color: rgb(16, 127, 231);
     font-size: 1.25rem;
-    padding: 1rem;
 }
 
 .introduction {
@@ -83,11 +78,18 @@ input {
 }
 
 
-// /* Media queries */
+/* Media queries */
 
-// @media screen and (max-width: 420px) {
-//     .form-container {
-//         background-color: rgb(14, 129, 182);
-//         display: inline;
-//     }
-// }
+@media screen and (max-width: 540px) {
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .second-section {
+        margin-top: 1rem;
+    }
+}

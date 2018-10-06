@@ -19,7 +19,7 @@ html, body {
 
 .first-section {
   background: white;
-  padding: 0.5rem 1rem; }
+  padding: 2rem 1rem; }
 
 .second-section {
   background: #0c75d8;
@@ -27,8 +27,7 @@ html, body {
 
 .form-title {
   color: #107fe7;
-  font-size: 1.25rem;
-  padding: 1rem; }
+  font-size: 1.25rem; }
 
 .introduction {
   font-size: 0.875rem;
@@ -64,3 +63,12 @@ input {
 .form-img {
   width: 100%;
   align-content: center; }
+
+/* Media queries */
+@media screen and (max-width: 540px) {
+  .wrapper {
+    padding: 1rem; }
+  .grid {
+    grid-template-columns: 1fr; }
+  .second-section {
+    margin-top: 1rem; } }
