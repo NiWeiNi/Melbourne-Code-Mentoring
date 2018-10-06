@@ -7,24 +7,28 @@ html, body {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.form-container {
-  background-color: #0e81b6;
-  display: flex; }
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  background: #1e93f4;
+  padding: 50px; }
 
-.form {
-  display: flex;
-  flex-direction: column; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
 .first-section {
-  background: white; }
+  background: white;
+  padding: 0.5rem 1rem; }
 
 .second-section {
   background: #0c75d8;
-  width: 20%; }
+  display: flex; }
 
 .form-title {
+  color: #107fe7;
   font-size: 1.25rem;
-  color: #107fe7; }
+  padding: 1rem; }
 
 .introduction {
   font-size: 0.875rem;
@@ -58,10 +62,5 @@ input {
   width: 50%; }
 
 .form-img {
-  width: auto; }
-
-/* Media queries */
-@media screen and (max-width: 420px) {
-  .form-container {
-    background-color: #0e81b6;
-    display: inline; } }
+  width: 100%;
+  align-content: center; }

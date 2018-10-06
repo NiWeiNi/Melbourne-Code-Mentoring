@@ -13,28 +13,32 @@ body {
 
 }
 
-.form-container {
-    background-color: rgb(14, 129, 182);
-    display: flex;
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    background: rgb(30, 147, 244);
+    padding: 50px;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .first-section {
     background: white;
+    padding: 0.5rem 1rem;
 }
 
 .second-section {
     background: rgb(12, 117, 216);
-    width: 20%;
+    display: flex;
 }
 
 .form-title {
-    font-size: 1.25rem;
     color: rgb(16, 127, 231);
+    font-size: 1.25rem;
+    padding: 1rem;
 }
 
 .introduction {
@@ -74,15 +78,16 @@ input {
 }
 
 .form-img {
-    width: auto;
+    width: 100%;
+    align-content: center;
 }
 
 
-/* Media queries */
+// /* Media queries */
 
-@media screen and (max-width: 420px) {
-    .form-container {
-        background-color: rgb(14, 129, 182);
-        display: inline;
-    }
-}
+// @media screen and (max-width: 420px) {
+//     .form-container {
+//         background-color: rgb(14, 129, 182);
+//         display: inline;
+//     }
+// }
